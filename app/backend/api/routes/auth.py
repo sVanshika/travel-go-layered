@@ -11,6 +11,7 @@ async def signup(user: SignupRequest):
     """
     Signup Endpoint: Creates a new user in Firebase Authentication.
     """
+    print("/signup invoked")
     return await auth_service.signup(user)
 
 @router.post("/login", response_model=TokenResponse)

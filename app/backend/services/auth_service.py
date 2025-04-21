@@ -34,8 +34,10 @@ class AuthService:
         """
         Service layer method to handle user signup
         """
+        print("auth_Service - signup")
         try:
             user_data = create_user(request.name, request.email, request.password)
+            print(user_data)
             return UserResponse(
                 name=user_data["name"],
                 email=user_data["email"],
