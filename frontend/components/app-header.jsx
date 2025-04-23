@@ -68,14 +68,14 @@ export function AppHeader() {
                   <Compass className="h-5 w-5" />
                   Explore Destinations
                 </Link>
-                <Link
+                {/* <Link
                   href="/profile"
                   className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-accent"
                   onClick={() => setIsOpen(false)}
                 >
                   <User className="h-5 w-5" />
                   Profile
-                </Link>
+                </Link> */}
                 <Link
                   href="/itinerary"
                   className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-accent"
